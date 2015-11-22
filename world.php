@@ -10,7 +10,7 @@
  	# loop through each country 
  	while ($row = mysql_fetch_array($results)) { 
  	  ?> 
- 	  <li> <?php echo $row["name"]; ?>, ruled by <?php echo $row["head_of_state"]; ?> </li> 
+ 	  <li> <?php echo $row["name"]; ?>, ruled by <?php echo $row["ruler"]; ?> </li> 
  	  <?php 
  	} 
  }
