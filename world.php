@@ -1,8 +1,8 @@
 <?php 
   
- if(!empty($_REQUEST['lookup']))
+ if(!empty($_REQUEST['country']))
  { 
-  $LOOKUP = $_REQUEST['lookup']; 
+  $LOOKUP = $_REQUEST['country']; 
  	 
  	# execute a SQL query on the database 
  	$results = mysql_query("SELECT * FROM countries WHERE name LIKE '%$LOOKUP%';"); 
